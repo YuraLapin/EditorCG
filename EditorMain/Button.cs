@@ -1,7 +1,7 @@
 ﻿using SFML.Graphics;
 using SFML.System;
 
-namespace Lab1Main
+namespace EditorMain
 {
     public class Button: IDrawable
     {

@@ -3,7 +3,7 @@ using SFML.Window;
 using System.Numerics;
 using System.Text.Json;
 
-namespace Lab1Main
+namespace EditorMain
 {
     public delegate void ClickHandler();
 
@@ -49,9 +49,6 @@ namespace Lab1Main
 
             { "Save button", new Button(910, 550, 100, 20, "Сохранить", Save) },
             { "Load button", new Button(910, 580, 100, 20, "Загрузить", Load) },
-
-            { "Current status info", new Label(300, 25, "") },
-            { "Current object info", new Label(900, 650, "") },
 
             { "oX", new Line(-WINDOW_WIDTH / 2, 0, 0, WINDOW_WIDTH / 2, 0, 0) },
             { "oY", new Line(0, -WINDOW_HEIGHT / 2, 0, 0, WINDOW_HEIGHT / 2, 0) },
@@ -102,17 +99,6 @@ namespace Lab1Main
         {
             window.SetActive(true);
             window.Clear(SFML.Graphics.Color.White);
-
-            ((Label)ui["Current status info"]).Txt = "";
-
-            if (selectedObjects.Count == 1)
-            {
-                ((Label)ui["Current object info"]).Txt = userObjects[selectedObjects[0]].ToString();
-            }
-            else
-            {
-                ((Label)ui["Current object info"]).Txt = "";
-            }
 
             foreach (KeyValuePair<string, IDrawable> uiElement in ui)
             {

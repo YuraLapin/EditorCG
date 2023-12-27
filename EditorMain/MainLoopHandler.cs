@@ -1,7 +1,7 @@
 ﻿using SFML.Graphics;
 using SFML.Window;
 
-namespace Lab1Main
+namespace EditorMain
 {
     internal class MainLoopHandler
     {

@@ -3,7 +3,7 @@ using SFML.System;
 using System.Globalization;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace Lab1Main
+namespace EditorMain
 {
     internal class TextField: IDrawable
     {

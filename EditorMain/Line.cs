@@ -2,7 +2,7 @@
 using SFML.System;
 using System.Numerics;
 
-namespace Lab1Main
+namespace EditorMain
 {
     [Serializable]
     public class Line: IDrawable

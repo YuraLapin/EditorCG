@@ -2,7 +2,7 @@
 using SFML.System;
 
 
-namespace Lab1Main
+namespace EditorMain
 {
     public class Label: IDrawable
     {

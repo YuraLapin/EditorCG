@@ -1,4 +1,4 @@
-﻿namespace Lab1Main
+﻿namespace EditorMain
 {
     public static class ExtensionMethods
     {
